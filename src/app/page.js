@@ -1,17 +1,32 @@
-import Layout from "./components/Layout";
-import Booking from "./components/Hero";
-import AboutUs from "./components/AboutUs";
-import Services from "./components/Services";
-import Works from "./components/Works";
-import Contact from "./components/Contact"
-export default function Home() {
+import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/HeroSection'
+import CollaborateSection from './components/CollabroateSection'
+import Work from './components/Work'
+import Ways from './components/Ways'
+import WorkWaySection from './components/WorkWaySection'
+import TeamsSection from './components/TeamSection'
+import TrustSection from './components/TrustSection'
+import Testimonials from './components/Testimonals'
+import Footer from './components/Footer'
+
+const page = () => {
   return (
-    <Layout>
-      <Booking />
-      <AboutUs />
-      <Services />
-      <Works />
-      <Contact/>
-    </Layout>
-  );
+    <div className='max-w-screen-xl mx-auto'>
+      <Navbar/>
+      <div className='max-w-6xl mx-auto'>
+      <Hero/>
+      <CollaborateSection/>
+      <Work/>
+      <Ways/>
+      <WorkWaySection/>
+      <TeamsSection/>
+      </div>
+      <TrustSection/>
+      <Testimonials/>
+      <Footer/>
+    </div>
+  )
 }
+
+export default page

@@ -13,6 +13,12 @@
     --foreground: #000000;
   }
 }
+.bg-custom {
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
 
 body {
   color: var(--foreground);
